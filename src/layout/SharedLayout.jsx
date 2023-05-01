@@ -1,6 +1,5 @@
 import { Outlet } from "react-router-dom"
 import {Navbar} from "../components";
-import { Logo, BurgerIcon } from "../assets/icons"
 
 const SharedLayout = () => {
   return (

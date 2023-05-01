@@ -43,6 +43,8 @@ dist-ssr
 
 ######## ~ MY IGNORES ~ ###########################
 
-checklist
-.checklist
+itemChecklist
+.itemChecklist
+itemChecklist.md
+.itemChecklist.md
 

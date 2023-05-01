@@ -3,6 +3,8 @@ export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     colors: {
+      white: "#ffffff",
+      black: "#000000",
       veryDarkBlue: "#1B1D23",
       darkGrey: "#60636D",
       mediumGrey: "#7D828F",
@@ -16,10 +18,12 @@ export default {
     extend: {
       letterSpacing: {
         xtraLrgHeading: "-5px",
+        xtraLrgHeadingMob: "2px",
         lrgMedHeading: "-2px",
       },
       lineHeight: {
         xtraLrgHeading: "200px",
+        xtraLrgHeadingMob: "48px",
         lrgHeading: "80px",
         medHeading: "64px",
         smHeading: "40px",
@@ -27,9 +31,14 @@ export default {
       },
       fontSize: {
         xtraLrgHeading: "250px",
+        xtraLrgHeadingMob: "48px",
+        //
         lrgHeading: "96px",
+        //
         medHeading: "72px",
+        //
         smHeading: "32px",
+        //
         bodyText: "18px",
       },
       gridTemplateColumns: {
