@@ -34,7 +34,7 @@ const Hero = () => {
             Paramour is a statement of bold, modern architecture.
           </p>
         </div>
-        <button className="px-8 py-5 bg-veryDarkBlue flex justify-center items-center gap-6 text-lg font-bold">
+        <button className="px-6 py-5 bg-veryDarkBlue flex justify-center items-center gap-6 text-lg font-bold">
           See Our Portfolio
           <span>
             <ArrowIcon className="stroke-white"/>

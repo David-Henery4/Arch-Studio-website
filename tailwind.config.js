@@ -19,14 +19,21 @@ export default {
       letterSpacing: {
         xtraLrgHeading: "-5px",
         xtraLrgHeadingMob: "2px",
+        // 
         lrgMedHeading: "-2px",
+        lrgMedHeadingMob: "-1.71px",
       },
       lineHeight: {
         xtraLrgHeading: "200px",
         xtraLrgHeadingMob: "48px",
+        // 
         lrgHeading: "80px",
+        lrgHeadingMob: "52px",
+        // 
         medHeading: "64px",
+        // 
         smHeading: "40px",
+        // 
         bodyText: "24px",
       },
       fontSize: {
@@ -34,6 +41,7 @@ export default {
         xtraLrgHeadingMob: "48px",
         //
         lrgHeading: "96px",
+        lrgHeadingMob: "48px",
         //
         medHeading: "72px",
         //
