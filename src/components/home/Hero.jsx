@@ -18,7 +18,7 @@ const Hero = () => {
         <source srcSet={paramourDeskHeroImg} />
         <img
           className="absolute top-0 left-0
-        w-full h-full"
+        w-full h-full object-cover"
           srcSet={paramourMobHeroImg}
           src={paramourMobHeroImg}
           alt="hero showing a company project"

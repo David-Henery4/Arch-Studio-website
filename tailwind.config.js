@@ -15,25 +15,30 @@ export default {
     fontFamily: {
       spartan: "'League Spartan', sans-serif",
     },
+    backgroundImage: {
+      aboutCTAMob: "url('/src/assets/home/mobile/image-small-team.jpg')",
+      aboutCTATab: "url('/src/assets/home/tablet/image-small-team.jpg')",
+      aboutCTALap: "url('/src/assets/home/desktop/image-small-team.jpg')",
+    },
     extend: {
       letterSpacing: {
         xtraLrgHeading: "-5px",
         xtraLrgHeadingMob: "2px",
-        // 
+        //
         lrgMedHeading: "-2px",
         lrgMedHeadingMob: "-1.71px",
       },
       lineHeight: {
         xtraLrgHeading: "200px",
         xtraLrgHeadingMob: "48px",
-        // 
+        //
         lrgHeading: "80px",
         lrgHeadingMob: "52px",
-        // 
+        //
         medHeading: "64px",
-        // 
+        //
         smHeading: "40px",
-        // 
+        //
         bodyText: "24px",
       },
       fontSize: {
