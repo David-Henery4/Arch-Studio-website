@@ -1,0 +1,36 @@
+import {projectDelSolDesk, projectDelSolMob, projectDelSolTab, projectPrototypeDesk, projectPrototypeMob, projectPrototypeTab, projectTowerDesk, projectTowerMob, projectTowerTab} from "../assets/portfolio";
+
+const featuredProjectsData = [
+  {
+    id: 1,
+    name: "Project Del Sol",
+    label: "View All Projects",
+    image: {
+      mob: projectDelSolMob,
+      tab: projectDelSolTab,
+      desk: projectDelSolDesk,
+    },
+  },
+  {
+    id: 2,
+    name: "228B Tower",
+    label: "View All Projects",
+    image: {
+      mob: projectTowerMob,
+      tab: projectTowerTab,
+      desk: projectTowerDesk,
+    },
+  },
+  {
+    id: 3,
+    name: "Le Prototype",
+    label: "View All Projects",
+    image: {
+      mob: projectPrototypeMob,
+      tab: projectPrototypeTab,
+      desk: projectPrototypeDesk,
+    },
+  },
+];
+
+export default featuredProjectsData
