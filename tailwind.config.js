@@ -59,6 +59,9 @@ export default {
         tab: "98px repeat(10,1fr) 98px",
         desk: "165px repeat(10,1fr) 165px",
       },
+      gridTemplateRows: {
+        footerMob: "60px",
+      },
     },
   },
   plugins: [],

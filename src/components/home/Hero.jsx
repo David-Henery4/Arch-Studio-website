@@ -4,6 +4,7 @@ import {
   paramourDeskHeroImg,
 } from "../../assets/home";
 import { ArrowIcon } from "../../assets/icons";
+import {PortfolioCTA} from "../../components"
 
 const Hero = () => {
   // use project data objects to display,
@@ -34,12 +35,7 @@ const Hero = () => {
             Paramour is a statement of bold, modern architecture.
           </p>
         </div>
-        <button className="px-6 py-5 bg-veryDarkBlue flex justify-center items-center gap-6 text-lg font-bold">
-          See Our Portfolio
-          <span>
-            <ArrowIcon className="stroke-white"/>
-          </span>
-        </button>
+        <PortfolioCTA/>
       </div>
     </section>
   );
