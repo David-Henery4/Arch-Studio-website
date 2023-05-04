@@ -3,7 +3,7 @@ const Welcome = () => {
   return (
     <section className="w-full col-start-2 col-end-12 pt-36 pb-28">
       <div className="grid gap-6">
-        <h2 className="text-veryDarkBlue text-lrgHeadingMob leading-lrgHeadingMob tracking-lrgMedHeadingMob font-bold">Welcome to Arch Studio</h2>
+        <h2 className="text-veryDarkBlue text-lrgHeadingMob leading-lrgHeadingMob tracking-lrgMedHeadingMob font-bold smTab:text-medHeading smTab:leading-medHeading smTab:tracking-lrgMedHeading">Welcome to Arch Studio</h2>
         <p className="inline-flex flex-col justify-center items-start gap-5 text-bodyText leading-bodyText font-medium text-darkGrey">
           <span>
             We have a unique network and skillset to help bring your projects to

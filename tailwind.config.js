@@ -2,6 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
+    screens: {
+      lrgMob: "25em", // 400px not used yet
+      smTab: "32.81em", // 525px
+      mdTab: "39.06em", // 625px
+    },
     colors: {
       white: "#ffffff",
       black: "#000000",
@@ -56,6 +61,7 @@ export default {
       },
       gridTemplateColumns: {
         mob: "32px repeat(10,1fr) 32px",
+        mdTab: "66px repeat(10,1fr) 66px",
         tab: "98px repeat(10,1fr) 98px",
         desk: "165px repeat(10,1fr) 165px",
       },

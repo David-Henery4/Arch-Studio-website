@@ -3,10 +3,10 @@ import {Navbar, Footer} from "../components";
 
 const SharedLayout = () => {
   return (
-    <main className="font-spartan grid grid-cols-mob">
+    <main className="font-spartan grid grid-cols-mob mdTab:grid-cols-mdTab">
       <Navbar />
       <Outlet />
-      <Footer/>
+      <Footer />
     </main>
   );
 }

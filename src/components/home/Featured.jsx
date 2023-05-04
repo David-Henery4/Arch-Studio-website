@@ -1,15 +1,10 @@
 import { ArrowIcon } from "../../assets/icons";
-import {
-  projectDelSolMob,
-  projectPrototypeMob,
-  projectTowerMob,
-} from "../../assets/portfolio";
 import featuredData from "../../miscData/featuredProjectsData";
 
 const Featured = () => {
   return (
     <section className="w-full col-start-2 col-end-12 grid gap-11 py-[72px]">
-      <h3 className="text-xtraLrgHeadingMob leading-lrgHeadingMob tracking-lrgMedHeadingMob font-bold">
+      <h3 className="text-xtraLrgHeadingMob leading-lrgHeadingMob tracking-lrgMedHeadingMob font-bold smTab:text-medHeading smTab:leading-medHeading smTab:tracking-lrgMedHeading">
         Featured
       </h3>
       {/* THUMB CONTAINER */}
@@ -24,9 +19,9 @@ const Featured = () => {
               <div className="absolute w-full h-full top-0 left-0 bg-gradient-to-b from-black/10 to-black/60 z-10"></div>
               <picture>
                 <source srcSet="" media="" />
-                <source srcSet="" media="" />
+                <source srcSet={item?.image?.tab} media="(min-width:25em)" />
                 <img
-                  className="absolute top-0 left-0 h-full w-full object-cover"
+                  className="absolute top-0 left-0 h-full w-full object-cover object-top"
                   src={item?.image?.mob}
                   alt="featured project thumbnail"
                   srcSet={item?.image?.mob}
