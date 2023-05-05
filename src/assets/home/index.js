@@ -20,6 +20,7 @@ import federalDeskHeroImg from "./desktop/image-hero-federal.jpg";
 import seraphDeskHeroImg from "./desktop/image-hero-seraph.jpg";
 import trinityDeskHeroImg from "./desktop/image-hero-trinity.jpg";
 import smallTeamDeskImg from "./desktop/image-small-team.jpg";
+import welcomeDeskImg from "./desktop/image-welcome.jpg";
 //
 
 export {
@@ -41,4 +42,5 @@ export {
   seraphDeskHeroImg,
   smallTeamDeskImg,
   trinityDeskHeroImg,
+  welcomeDeskImg,
 };

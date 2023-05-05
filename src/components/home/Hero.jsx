@@ -12,10 +12,10 @@ const Hero = () => {
   // with index being used to select the
   // correct one.
   return (
-    <section className="col-start-1 col-end-13 w-full min-h-[560px] p-8 relative text-white smTab:min-h-[720px] mdTab:col-start-2 mdTab:col-end-12 tab:p-14">
+    <section className="col-start-1 col-end-13 w-full min-h-[560px] p-8 relative text-white smTab:min-h-[720px] mdTab:col-start-2 mdTab:col-end-12 tab:p-14 desk:px-[190px]">
       <div className="absolute top-0 left-0 w-full h-full bg-[#000000] opacity-[.35] z-10"></div>
       <picture>
-        {/* <source srcSet={paramourDeskHeroImg} media="(min-width: 46.25em)" /> */}
+        <source srcSet={paramourDeskHeroImg} media="(min-width: 56.25em)" />
         <source srcSet={paramourTabHeroImg} media="(min-width: 46.25em)" />
         <img
           className="absolute top-0 left-0
@@ -27,7 +27,7 @@ const Hero = () => {
       </picture>
       <div className="relative z-20 h-full w-full flex flex-col justify-center items-start gap-20">
         <div className="grid gap-3 ">
-          <h1 className="text-xtraLrgHeadingMob leading-xtraLrgHeadingMob tracking-xtraLrgHeadingMob font-semibold smTab:text-lrgHeading smTab:leading-lrgHeading smTab:tracking-lrgMedHeading">
+          <h1 className="max-w-[385px] text-xtraLrgHeadingMob leading-xtraLrgHeadingMob tracking-xtraLrgHeadingMob font-semibold smTab:text-lrgHeading smTab:leading-lrgHeading smTab:tracking-lrgMedHeading">
             Project Paramour
           </h1>
           <p className="text-bodyText leading-bodyText max-w-md font-medium">

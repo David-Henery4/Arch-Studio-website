@@ -4,7 +4,7 @@ import { AllProjectsBtn } from "../../components";
 
 const Featured = () => {
   return (
-    <section className="w-full col-start-2 col-end-12 grid gap-11 py-[72px] tab:py-[200px]">
+    <section className="w-full col-start-2 col-end-12 grid gap-11 py-[72px] tab:py-[200px] tab:gap-[85px] lap:gap-16">
       <div className="flex justify-between items-center">
         <h3 className="text-xtraLrgHeadingMob leading-lrgHeadingMob tracking-lrgMedHeadingMob font-bold smTab:text-medHeading smTab:leading-medHeading smTab:tracking-lrgMedHeading">
           Featured
@@ -12,18 +12,23 @@ const Featured = () => {
         <AllProjectsBtn isMob={false} />
       </div>
       {/* THUMB CONTAINER */}
-      <div className="w-full grid gap-6">
+      <div className="w-full grid gap-6 lap:grid-cols-featuredLap lap:gap-[30px]">
         {/* Thumb Item */}
         {featuredData.map((item) => {
           return (
             <div
               key={item?.id}
-              className="relative w-full h-60 flex flex-col justify-end items-start overflow-hidden"
+              className="relative w-full h-60 flex flex-col justify-end items-start overflow-hidden lap:h-[560px]"
             >
               <div className="absolute w-full h-full top-0 left-0 bg-gradient-to-b from-black/10 to-black/60 z-10"></div>
-              <p className="hidden absolute top-8 right-4 z-20 text-xtraLrgHeading leading-xtraLrgHeading text-white/50 font-bold tracking-xtraLrgHeading tab:block">{item?.id}</p>
+              <p className="hidden absolute top-8 right-4 z-20 text-xtraLrgHeading leading-xtraLrgHeading text-white/50 font-bold tracking-xtraLrgHeading tab:block lap:right-0">
+                {item?.id}
+              </p>
               <picture>
-                <source srcSet="" media="" />
+                <source
+                  srcSet={item?.image?.desk}
+                  media="(min-width: 64.37em)"
+                />
                 <source srcSet={item?.image?.tab} media="(min-width:25em)" />
                 <img
                   className="absolute top-0 left-0 h-full w-full object-cover object-top"

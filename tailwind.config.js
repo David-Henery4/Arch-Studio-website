@@ -7,6 +7,11 @@ export default {
       smTab: "32.81em", // 525px
       mdTab: "39.06em", // 625px
       tab: "46.25em", // 740px
+      smLap: "56.25em", // 900x
+      lap: "64.37em", // 1030px
+      lgLap: "68.75em", // 1100px
+      desk: "73.75em", // 1180px
+      lgDesk: "80.31em", // 1285px
     },
     colors: {
       white: "#ffffff",
@@ -66,6 +71,7 @@ export default {
         tab: "98px repeat(10,1fr) 98px",
         footerTab: "1fr 156px",
         desk: "165px repeat(10,1fr) 165px",
+        featuredLap: "repeat(3,1fr)",
       },
       gridTemplateRows: {
         footerMob: "60px",

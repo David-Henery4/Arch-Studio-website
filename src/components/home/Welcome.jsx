@@ -1,15 +1,17 @@
+import {welcomeDeskImg} from "../../assets/home"
 
 const Welcome = () => {
   return (
-    <section className="relative w-full col-start-2 col-end-12 pt-36 pb-28 tab:pt-[248px] tab:pb-[233px]">
-      <div className="grid gap-6">
-        <h2 className="hidden absolute top-24 left-0 tab:block text-veryLightGrey text-[130px] tracking-[3px] font-bold leading-xtraLrgHeading">
+    <section className="relative w-full col-start-2 col-end-12 pt-36 pb-28 tab:pt-[248px] tab:pb-[233px] lap:py-[195px] lgLap:flex lgLap:flex-row-reverse lgLap:justify-start lgLap:items-center lgLap:gap-[125px]">
+      <img className="hidden lgLap:block" src={welcomeDeskImg} alt="welcome image section image showing a recent building project" />
+      <div className="grid gap-6 smLap:justify-center">
+        <h2 className="hidden absolute top-24 left-0 tab:block text-veryLightGrey text-[130px] tracking-[3px] font-bold leading-xtraLrgHeading smLap:text-[175px] lap:top-[55px] lgLap:top-[105px] desk:top-[85px] desk:text-[250px] desk:tracking-xtraLrgHeading">
           Welcome
         </h2>
-        <h2 className="max-w-[495px] text-veryDarkBlue text-lrgHeadingMob leading-lrgHeadingMob tracking-lrgMedHeadingMob font-bold smTab:text-medHeading smTab:leading-medHeading smTab:tracking-lrgMedHeading">
+        <h2 className="max-w-[325px] smTab:max-w-[495px] text-veryDarkBlue text-lrgHeadingMob leading-lrgHeadingMob tracking-lrgMedHeadingMob font-bold smTab:text-medHeading smTab:leading-medHeading smTab:tracking-lrgMedHeading">
           Welcome to Arch Studio
         </h2>
-        <p className="inline-flex flex-col justify-center items-start gap-5 text-bodyText leading-bodyText font-medium text-darkGrey">
+        <p className="inline-flex flex-col justify-center items-start gap-5 text-bodyText leading-bodyText font-medium text-darkGrey max-w-[572px]">
           <span>
             We have a unique network and skillset to help bring your projects to
             life. Our small team of highly skilled individuals combined with our
