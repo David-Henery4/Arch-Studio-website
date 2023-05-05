@@ -12,11 +12,11 @@ const Hero = () => {
   // with index being used to select the
   // correct one.
   return (
-    <section className="col-start-1 col-end-13 w-full min-h-[560px] p-8 relative text-white smTab:min-h-[720px] mdTab:col-start-2 mdTab:col-end-12 ">
+    <section className="col-start-1 col-end-13 w-full min-h-[560px] p-8 relative text-white smTab:min-h-[720px] mdTab:col-start-2 mdTab:col-end-12 tab:p-14">
       <div className="absolute top-0 left-0 w-full h-full bg-[#000000] opacity-[.35] z-10"></div>
       <picture>
-        <source srcSet={paramourTabHeroImg} />
-        <source srcSet={paramourDeskHeroImg} />
+        {/* <source srcSet={paramourDeskHeroImg} media="(min-width: 46.25em)" /> */}
+        <source srcSet={paramourTabHeroImg} media="(min-width: 46.25em)" />
         <img
           className="absolute top-0 left-0
         w-full h-full object-cover"

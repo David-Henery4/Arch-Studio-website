@@ -6,6 +6,7 @@ export default {
       lrgMob: "25em", // 400px not used yet
       smTab: "32.81em", // 525px
       mdTab: "39.06em", // 625px
+      tab: "46.25em", // 740px
     },
     colors: {
       white: "#ffffff",
@@ -63,6 +64,7 @@ export default {
         mob: "32px repeat(10,1fr) 32px",
         mdTab: "66px repeat(10,1fr) 66px",
         tab: "98px repeat(10,1fr) 98px",
+        footerTab: "1fr 156px",
         desk: "165px repeat(10,1fr) 165px",
       },
       gridTemplateRows: {

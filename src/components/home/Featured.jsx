@@ -1,12 +1,16 @@
 import { ArrowIcon } from "../../assets/icons";
 import featuredData from "../../miscData/featuredProjectsData";
+import { AllProjectsBtn } from "../../components";
 
 const Featured = () => {
   return (
-    <section className="w-full col-start-2 col-end-12 grid gap-11 py-[72px]">
-      <h3 className="text-xtraLrgHeadingMob leading-lrgHeadingMob tracking-lrgMedHeadingMob font-bold smTab:text-medHeading smTab:leading-medHeading smTab:tracking-lrgMedHeading">
-        Featured
-      </h3>
+    <section className="w-full col-start-2 col-end-12 grid gap-11 py-[72px] tab:py-[200px]">
+      <div className="flex justify-between items-center">
+        <h3 className="text-xtraLrgHeadingMob leading-lrgHeadingMob tracking-lrgMedHeadingMob font-bold smTab:text-medHeading smTab:leading-medHeading smTab:tracking-lrgMedHeading">
+          Featured
+        </h3>
+        <AllProjectsBtn isMob={false} />
+      </div>
       {/* THUMB CONTAINER */}
       <div className="w-full grid gap-6">
         {/* Thumb Item */}
@@ -14,9 +18,10 @@ const Featured = () => {
           return (
             <div
               key={item?.id}
-              className="relative w-full h-60 flex flex-col justify-end items-start"
+              className="relative w-full h-60 flex flex-col justify-end items-start overflow-hidden"
             >
               <div className="absolute w-full h-full top-0 left-0 bg-gradient-to-b from-black/10 to-black/60 z-10"></div>
+              <p className="hidden absolute top-8 right-4 z-20 text-xtraLrgHeading leading-xtraLrgHeading text-white/50 font-bold tracking-xtraLrgHeading tab:block">{item?.id}</p>
               <picture>
                 <source srcSet="" media="" />
                 <source srcSet={item?.image?.tab} media="(min-width:25em)" />
@@ -41,15 +46,7 @@ const Featured = () => {
             </div>
           );
         })}
-        <button
-          className="w-full inline-flex justify-center items-center bg-veryDarkBlue text-white gap-6 py-5 text-bodyText leading-bodyText font-bold
-      "
-        >
-          See All
-          <span>
-            <ArrowIcon className="stroke-white" />
-          </span>
-        </button>
+        <AllProjectsBtn isMob={true} />
       </div>
     </section>
   );

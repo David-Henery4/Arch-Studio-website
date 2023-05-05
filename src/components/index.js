@@ -1,5 +1,6 @@
 // REUSED
 import PortfolioCTA from "./reused/PortfolioCTA";
+import AllProjectsBtn from "./reused/AllProjectsBtn";
 // SHARED
 import Navbar from "./shared/Navbar";
 import Footer from "./shared/Footer";
@@ -12,6 +13,7 @@ import Featured from "./home/Featured";
 export{
   // SHARED
   PortfolioCTA,
+  AllProjectsBtn,
   // SHARED
   Navbar,
   Footer,
