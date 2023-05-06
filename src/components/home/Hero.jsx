@@ -1,41 +1,34 @@
-import {
-  paramourMobHeroImg,
-  paramourTabHeroImg,
-  paramourDeskHeroImg,
-} from "../../assets/home";
-import { ArrowIcon } from "../../assets/icons";
-import {PortfolioCTA} from "../../components"
+import heroProjectData from "../../miscData/heroProjectData";
+import { ActiveHeroProject } from "../../components";
+import { useState } from "react";
 
 const Hero = () => {
-  // use project data objects to display,
-  // different projects text & images
-  // with index being used to select the
-  // correct one.
+  const [activeProjectId, setActiveProjectId] = useState(1);
+  const [activeProject, setActiveProject] = useState(heroProjectData[0]);
+  //
   return (
     <section className="col-start-1 col-end-13 w-full min-h-[560px] p-8 relative text-white smTab:min-h-[720px] mdTab:col-start-2 mdTab:col-end-12 tab:p-14 desk:px-[190px]">
       <div className="absolute top-0 left-0 w-full h-full bg-[#000000] opacity-[.35] z-10"></div>
-      <picture>
-        <source srcSet={paramourDeskHeroImg} media="(min-width: 56.25em)" />
-        <source srcSet={paramourTabHeroImg} media="(min-width: 46.25em)" />
-        <img
-          className="absolute top-0 left-0
-        w-full h-full object-cover"
-          srcSet={paramourMobHeroImg}
-          src={paramourMobHeroImg}
-          alt="hero showing a company project"
-        />
-      </picture>
-      <div className="relative z-20 h-full w-full flex flex-col justify-center items-start gap-20">
-        <div className="grid gap-3 ">
-          <h1 className="max-w-[385px] text-xtraLrgHeadingMob leading-xtraLrgHeadingMob tracking-xtraLrgHeadingMob font-semibold smTab:text-lrgHeading smTab:leading-lrgHeading smTab:tracking-lrgMedHeading">
-            Project Paramour
-          </h1>
-          <p className="text-bodyText leading-bodyText max-w-md font-medium">
-            Project made for an art museum near Southwest London. Project
-            Paramour is a statement of bold, modern architecture.
-          </p>
-        </div>
-        <PortfolioCTA />
+      <ActiveHeroProject {...activeProject} />
+      <div className="hidden absolute bottom-0 -left-20 justify-center items-center z-40 lap:flex">
+        {heroProjectData.map((pro, i) => {
+          return (
+            <div
+              key={pro?.id}
+              className={`w-20 h-20 grid place-items-center text-bodyText leading-[25px] font-bold hover:cursor-pointer ${
+                activeProjectId === pro?.id
+                  ? "bg-veryDarkBlue text-white"
+                  : "bg-white text-mediumGrey hover:bg-veryLightGrey"
+              }`}
+              onClick={() => {
+                setActiveProject(heroProjectData[i]);
+                setActiveProjectId(pro?.id);
+              }}
+            >
+              <p>0{pro?.id}</p>
+            </div>
+          );
+        })}
       </div>
     </section>
   );

@@ -4,7 +4,7 @@ const AllProjectsBtn = ({isMob}) => {
   //
   return (
     <button
-      className={`h-[72px] inline-flex justify-center items-center bg-veryDarkBlue text-white gap-6  text-bodyText leading-bodyText font-bold ${
+      className={`h-[72px] inline-flex justify-center items-center bg-veryDarkBlue text-white gap-6  text-bodyText leading-bodyText font-bold hover:bg-darkGrey ${
         isMob ? "w-full tab:hidden" : "hidden w-[169px] tab:inline-flex"
       }
       `}

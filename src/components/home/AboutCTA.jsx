@@ -9,7 +9,7 @@ const AboutCTA = () => {
       </h3>
       <a
         href="#"
-        className="relative px-8 py-6 bg-veryDarkBlue text-white font-bold text-bodyText inline-flex justify-center items-center gap-6"
+        className="relative px-8 py-6 bg-veryDarkBlue text-white font-bold text-bodyText inline-flex justify-center items-center gap-6 hover:bg-darkGrey"
       >
         About Us
         <span>
