@@ -1,10 +1,12 @@
 import { ArrowIcon } from "../../assets/icons";
 
-const AllProjectsBtn = ({isMob}) => {
+const AllProjectsBtn = ({isMob, isPortfolio}) => {
   //
   return (
     <button
-      className={`h-[72px] inline-flex justify-center items-center bg-veryDarkBlue text-white gap-6  text-bodyText leading-bodyText font-bold hover:bg-darkGrey ${
+      className={`h-[72px] inline-flex justify-center items-center bg-veryDarkBlue text-white gap-6  text-bodyText leading-bodyText font-bold hover:bg-darkGrey 
+      ${isPortfolio && "hidden"}
+      ${
         isMob ? "w-full tab:hidden" : "hidden w-[169px] tab:inline-flex"
       }
       `}

@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="w-[120px] h-[120px] bg-veryDarkBlue grid place-items-center">
           <Logo className="fill-white" />
         </div>
-        <ul className="flex flex-col justify-center items-center mr-auto gap-8 text-mediumGrey text-bodyText leading-[25px] font-bold tab:flex-row">
+        <ul className="flex flex-col justify-center items-center tab:mr-auto gap-8 text-mediumGrey text-bodyText leading-[25px] font-bold tab:flex-row">
           {navigationData.map((nav) => {
             return (
               <li key={nav?.id} className="hover:text-veryDarkBlue">

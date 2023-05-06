@@ -1,4 +1,4 @@
-import {projectDelSolDesk, projectDelSolMob, projectDelSolTab, projectPrototypeDesk, projectPrototypeMob, projectPrototypeTab, projectTowerDesk, projectTowerMob, projectTowerTab} from "../assets/portfolio";
+import {projectDelSolDesk, projectDelSolMob, projectDelSolTab, projectPrototypeDesk, projectPrototypeMob, projectPrototypeTab, project228bDesk, project228bMob, project228bTab} from "../assets/portfolio";
 
 const featuredProjectsData = [
   {
@@ -16,9 +16,9 @@ const featuredProjectsData = [
     name: "228B Tower",
     label: "View All Projects",
     image: {
-      mob: projectTowerMob,
-      tab: projectTowerTab,
-      desk: projectTowerDesk,
+      mob: project228bMob,
+      tab: project228bTab,
+      desk: project228bDesk,
     },
   },
   {
