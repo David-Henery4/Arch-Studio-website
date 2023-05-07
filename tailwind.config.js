@@ -12,6 +12,7 @@ export default {
       lgLap: "68.75em", // 1100px
       desk: "73.75em", // 1180px
       lgDesk: "80.31em", // 1285px
+      XtraLgDesk: "90em", // 1400px
     },
     colors: {
       white: "#ffffff",
@@ -72,9 +73,13 @@ export default {
         footerTab: "1fr 156px",
         desk: "165px repeat(10,1fr) 165px",
         featuredLap: "repeat(3,1fr)",
+        subTab: "58px 1fr",
+        subDesk: "1fr 154px 1fr",
       },
       gridTemplateRows: {
         footerMob: "60px",
+        subTab: "repeat(12,1fr)",
+        subDesk: "219px 1fr",
       },
     },
   },

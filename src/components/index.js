@@ -1,10 +1,14 @@
+
 // REUSED
 import PortfolioCTA from "./reused/PortfolioCTA";
 import AllProjectsBtn from "./reused/AllProjectsBtn";
 import ProjectsGallery from "./reused/ProjectsGallery";
+import SubPageHero from "./reused/SubPageHero";
+
 // SHARED
 import Navbar from "./shared/Navbar";
 import Footer from "./shared/Footer";
+
 // HOME
 // Hero
 import Hero from "./home/Hero";
@@ -19,6 +23,7 @@ export{
   PortfolioCTA,
   AllProjectsBtn,
   ProjectsGallery,
+  SubPageHero,
   // SHARED
   Navbar,
   Footer,
