@@ -1,12 +1,11 @@
-import {SubPageHero} from "../components"
+import {SubPageHero, AboutInfo} from "../components"
 
 const About = () => {
   return (
     <>
       <SubPageHero/>
-      
+      <AboutInfo/>
     </>
-
   )
 }
 

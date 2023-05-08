@@ -18,6 +18,9 @@ import Welcome from "./home/Welcome";
 import AboutCTA from "./home/AboutCTA";
 import Featured from "./home/Featured";
 
+// About
+import AboutInfo from "./about/AboutInfo";
+
 export{
   // REUSED
   PortfolioCTA,
@@ -35,4 +38,6 @@ export{
   Welcome,
   AboutCTA,
   Featured,
+  // About
+  AboutInfo,
 }
