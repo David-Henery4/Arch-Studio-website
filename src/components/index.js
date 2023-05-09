@@ -20,6 +20,7 @@ import Featured from "./home/Featured";
 
 // About
 import AboutInfo from "./about/AboutInfo";
+import Leaders from "./about/Leaders";
 
 export{
   // REUSED
@@ -40,4 +41,5 @@ export{
   Featured,
   // About
   AboutInfo,
+  Leaders,
 }

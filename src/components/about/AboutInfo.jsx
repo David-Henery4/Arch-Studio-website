@@ -2,7 +2,7 @@ import {heritageImg} from "../../assets/about"
 
 const AboutInfo = () => {
   return (
-    <section className="col-start-2 col-end-12 pt-20 pb-28 flex flex-col lgLap:flex-row lgLap:items-center lgLap:gap-[124px]">
+    <section className="col-start-2 col-end-12 pt-20 pb-28 flex flex-col mdTab:py-52 lgLap:flex-row lgLap:items-center lgLap:gap-[124px]">
       <div className="grid gap-6 smTab:gap-16">
         <h3 className="text-lrgHeadingMob leading-lrgHeadingMob tracking-lrgMedHeadingMob font-bold smTab:text-medHeading max-w-[390px]">
           Our Heritage

@@ -3,11 +3,11 @@ export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     screens: {
-      lrgMob: "25em", // 400px not used yet
+      lrgMob: "26.87em", // 430px
       smTab: "32.81em", // 525px
       mdTab: "39.06em", // 625px
       tab: "46.25em", // 740px
-      smLap: "56.25em", // 900x
+      smLap: "56.25em", // 900px
       lap: "64.37em", // 1030px
       lgLap: "68.75em", // 1100px
       desk: "73.75em", // 1180px
@@ -80,6 +80,7 @@ export default {
         footerMob: "60px",
         subTab: "repeat(12,1fr)",
         subDesk: "219px 1fr",
+        leadersCard: "min-content",
       },
     },
   },
