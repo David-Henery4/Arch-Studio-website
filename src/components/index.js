@@ -22,6 +22,9 @@ import Featured from "./home/Featured";
 import AboutInfo from "./about/AboutInfo";
 import Leaders from "./about/Leaders";
 
+//Contact
+import ContactDetails from "./contact/ContactDetails";
+
 export{
   // REUSED
   PortfolioCTA,
@@ -42,4 +45,6 @@ export{
   // About
   AboutInfo,
   Leaders,
+  // Contact
+  ContactDetails,
 }

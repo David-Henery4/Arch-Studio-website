@@ -1,5 +1,5 @@
 import { useState } from "react"
-import {SubPageHero} from "../components"
+import {SubPageHero, ContactDetails} from "../components"
 import {contactSubHeroData} from "../miscData/subHeroData"
 
 const Contact = () => {
@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <>
       <SubPageHero {...contactData}/>
-      
+      <ContactDetails/>
     </>
   )
 }
