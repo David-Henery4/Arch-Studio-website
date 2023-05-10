@@ -24,6 +24,8 @@ import Leaders from "./about/Leaders";
 
 //Contact
 import ContactDetails from "./contact/ContactDetails";
+import Map from "./contact/Map";
+
 
 export{
   // REUSED
@@ -47,4 +49,5 @@ export{
   Leaders,
   // Contact
   ContactDetails,
+  Map,
 }

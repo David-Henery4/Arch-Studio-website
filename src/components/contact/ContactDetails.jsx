@@ -3,7 +3,7 @@ import {ArrowIcon} from "../../assets/icons"
 
 const ContactDetails = () => {
   return (
-    <section className="w-full col-start-2 col-end-12 flex flex-col justify-start items-start gap-10 py-16 lap:flex-row desk:gap-36">
+    <section className="w-full col-start-2 col-end-12 flex flex-col justify-start items-start gap-10 py-16 smTab:py-44 lap:flex-row desk:gap-36 desk:py-[278px]">
       <h3 className="font-bold text-lrgHeadingMob leading-lrgHeadingMob tracking-lrgMedHeadingMob max-w-[300px] smTab:text-medHeading smTab:leading-medHeading smTab:tracking-lrgMedHeading">
         Contact Details
       </h3>
