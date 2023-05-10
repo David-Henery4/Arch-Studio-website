@@ -1,5 +1,5 @@
 import { useState } from "react"
-import {SubPageHero, ContactDetails, Map} from "../components"
+import {SubPageHero, ContactDetails, Map, ContactForm} from "../components"
 import {contactSubHeroData} from "../miscData/subHeroData"
 
 // testing
@@ -12,6 +12,7 @@ const Contact = () => {
       <SubPageHero {...contactData}/>
       <ContactDetails/>
       <Map/>
+      <ContactForm/>
     </>
   )
 }

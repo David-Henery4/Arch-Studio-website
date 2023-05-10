@@ -25,6 +25,7 @@ import Leaders from "./about/Leaders";
 //Contact
 import ContactDetails from "./contact/ContactDetails";
 import Map from "./contact/Map";
+import ContactForm from "./contact/ContactForm";
 
 
 export{
@@ -50,4 +51,5 @@ export{
   // Contact
   ContactDetails,
   Map,
+  ContactForm,
 }
