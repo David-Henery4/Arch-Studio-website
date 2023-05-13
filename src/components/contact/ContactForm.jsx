@@ -1,5 +1,6 @@
 import { useState } from "react";
 import {ArrowIcon} from "../../assets/icons"
+import useValidation from "../../hooks/useValidation";
 
 const ContactForm = () => {
   const [isNameActive, setIsNameActive] = useState(false);
@@ -11,6 +12,16 @@ const ContactForm = () => {
     message: "",
   });
   //
+  const handleFinalSubmit = (finalValues) => {
+    console.log("form submitted")
+  }
+  //
+  const {validation} = useValidation(handleFinalSubmit)
+  //
+  const hanldeInitialSubmit = () => {
+    validation(formValues)
+  }
+  //
   const handleInputValues = (ev) => {
     setFormValues((oldValues) => {
       return { ...oldValues, [ev.target.name]: ev.target.value };
@@ -18,14 +29,17 @@ const ContactForm = () => {
   };
   // () => {}
   return (
-    <section className="col-start-2 col-end-12 flex flex-col justify-center items-start gap-11 pb-[72px]">
-      <h3 className="text-lrgHeadingMob leading-lrgHeadingMob tracking-lrgMedHeadingMob font-bold">
+    <section className="col-start-2 col-end-12 flex flex-col justify-center items-start gap-11 pb-[72px] smLap:flex-row smTab:justify-between">
+      <h3 className="text-lrgHeadingMob leading-lrgHeadingMob tracking-lrgMedHeadingMob font-bold smTab:text-medHeading smTab:leading-medHeading smTab:tracking-lrgMedHeading">
         Connect with us
       </h3>
-      <form className="w-full text-bodyText grid gap-10" onSubmit={(e) => e.preventDefault()}>
+      <form
+        className="w-full text-bodyText grid gap-10"
+        onSubmit={(e) => e.preventDefault()}
+      >
         <div className="relative">
           <label
-            className={`absolute top-0 left-8 text-xl -tracking-[0.31px] pointer-events-none ${
+            className={`absolute top-0 left-8 text-lightGrey text-xl -tracking-[0.31px] pointer-events-none ${
               isNameActive && "hidden"
             } `}
             htmlFor="name"
@@ -49,7 +63,7 @@ const ContactForm = () => {
         </div>
         <div className="relative">
           <label
-            className={`absolute top-0 left-8 text-xl -tracking-[0.31px] pointer-events-none ${
+            className={`absolute top-0 left-8 text-lightGrey text-xl -tracking-[0.31px] pointer-events-none ${
               isEmailActive && "hidden"
             }`}
             htmlFor="email"
@@ -73,7 +87,7 @@ const ContactForm = () => {
         </div>
         <div className="relative">
           <label
-            className={`absolute top-0 left-8 text-xl -tracking-[0.31px] pointer-events-none ${
+            className={`absolute top-0 left-8 text-lightGrey text-xl -tracking-[0.31px] pointer-events-none ${
               isMessageActive && "hidden"
             }`}
             htmlFor="message"
@@ -93,7 +107,9 @@ const ContactForm = () => {
                 : setIsMessageActive(false)
             }
           ></textarea>
-          <button className="w-20 h-20 ml-auto bg-veryDarkBlue grid place-items-center hover:bg-darkGrey">
+          <button
+            className="w-20 h-20 ml-auto bg-veryDarkBlue grid place-items-center hover:bg-darkGrey"
+            onClick={() => hanldeInitialSubmit()}>
             <ArrowIcon className="stroke-white" />
           </button>
         </div>
