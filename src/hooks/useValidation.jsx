@@ -18,6 +18,7 @@ const useValidation = (callback) => {
         }
       })
       // delete from errors
+      delete errorValues[name]
     } else {
       setErrorValues((oldValues) => {
         return {
@@ -29,14 +30,39 @@ const useValidation = (callback) => {
         }
       })
       // delete from values
+      delete finalValues[name]
     }
   }
   //
   const checkEmail = (rawEmail) => {
     const name = rawEmail[0];
     const trimmedValue = rawEmail[1].trim()
+    console.log(name, trimmedValue)
     //
-    // const trimmedEmail = rawEmail.trim()
+    if (
+      !new RegExp(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      ).test(trimmedValue)
+    ) {
+      setErrorValues((oldValues) => {
+        return {
+          ...oldValues,
+          [name]: {
+            isError: true,
+            msg: "Invalid Email"
+          }
+        }
+      })
+      delete finalValues[name]
+    } else {
+      setFinalValues((oldValues) => {
+        return {
+          ...oldValues,
+          [name]: trimmedValue
+        }
+      })
+      delete errorValues[name]
+    }
   }
   //
   const validation = (inputValues) => {
