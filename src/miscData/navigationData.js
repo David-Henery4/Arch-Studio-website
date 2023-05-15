@@ -4,17 +4,17 @@ const navigationData = [
   {
     id: 1,
     name: "Portfolio",
-    link: "/",
+    link: "portfolio",
   },
   {
     id: 2,
     name: "About Us",
-    link: "/",
+    link: "about",
   },
   {
     id: 3,
     name: "Contact",
-    link: "/",
+    link: "contact",
   },
 ]
 

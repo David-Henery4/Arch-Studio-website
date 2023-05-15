@@ -8,6 +8,8 @@ import SubPageHero from "./reused/SubPageHero";
 // SHARED
 import Navbar from "./shared/Navbar";
 import Footer from "./shared/Footer";
+import Sidebar from "./shared/Sidebar";
+import OverlayCover from "./shared/OverlayCover";
 
 // HOME
 // Hero
@@ -37,6 +39,8 @@ export{
   // SHARED
   Navbar,
   Footer,
+  Sidebar,
+  OverlayCover,
   // HOME
   // hero
   Hero,
