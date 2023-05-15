@@ -1,4 +1,5 @@
 import {AllProjectsBtn} from "../../components"
+import { Link } from "react-router-dom";
 
 const ProjectsGallery = ({projects, isPortfolio = false}) => {
   return (
@@ -32,12 +33,15 @@ const ProjectsGallery = ({projects, isPortfolio = false}) => {
               <h4 className="text-smHeading font-bold leading-10">
                 {item?.name}
               </h4>
-              <a
-                href="#"
-                className="text-bodyText leading-bodyText font-medium text-white/75"
-              >
-                {item?.label}
-              </a>
+              {isPortfolio ? (
+                <p className="text-bodyText leading-bodyText font-medium text-white/75">
+                  {item?.label}
+                </p>
+              ) : (
+                <Link to="portfolio" className="text-bodyText leading-bodyText font-medium text-white/75">
+                  {item?.label}
+                </Link>
+              )}
             </div>
           </div>
         );

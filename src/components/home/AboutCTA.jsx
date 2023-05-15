@@ -1,4 +1,5 @@
 import { ArrowIcon } from "../../assets/icons";
+import { Link } from "react-router-dom";
 
 const AboutCTA = () => {
   return (
@@ -7,15 +8,15 @@ const AboutCTA = () => {
       <h3 className="max-w-[300px] relative text-lrgHeadingMob text-white font-bold leading-lrgHeadingMob tracking-lrgMedHeadingMob smTab:max-w-[400px] smTab:text-medHeading smTab:leading-medHeading smTab:tracking-lrgMedHeading">
         Small team, big ideas
       </h3>
-      <a
-        href="#"
+      <Link
+        to="about"
         className="relative px-8 py-6 bg-veryDarkBlue text-white font-bold text-bodyText inline-flex justify-center items-center gap-6 hover:bg-darkGrey"
       >
         About Us
         <span>
           <ArrowIcon className="stroke-white" />
         </span>
-      </a>
+      </Link>
     </section>
   );
 };
