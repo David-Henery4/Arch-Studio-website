@@ -34,10 +34,9 @@ Users can:
 
 ### Links
 
-Links to be added!!!!!!
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/archstudio-react-tailwindcss-reactrouter-vite-leaflet-cssgrid-mqRtt8AZmk)
+- Live Site URL: [arch-architects](https://arch-architects.netlify.app)
 
 ## My process
 

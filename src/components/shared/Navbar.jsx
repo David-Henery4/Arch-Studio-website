@@ -12,6 +12,7 @@ const Navbar = ({ sidebarInfo }) => {
         onClick={() => {
           setIsSidebarActive(false);
         }}
+        aria-label="Logo Link in the Navbar that leads back to the home page"
       >
         <Logo className="fill-veryDarkBlue" />
       </Link>
@@ -19,7 +20,16 @@ const Navbar = ({ sidebarInfo }) => {
         {navigationData.map((nav) => {
           return (
             <li key={nav?.id} className="hover:text-veryDarkBlue">
-              <NavLink className={({isActive}) => isActive ? "text-veryDarkBlue relative after:absolute after:-bottom-4 after:left-1/2 after:-translate-x-1/2 after:w-6 after:h-[2px] after:bg-veryDarkBlue" : ""} to={nav?.link}>{nav?.name}</NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-veryDarkBlue relative after:absolute after:-bottom-4 after:left-1/2 after:-translate-x-1/2 after:w-6 after:h-[2px] after:bg-veryDarkBlue"
+                    : ""
+                }
+                to={nav?.link}
+              >
+                {nav?.name}
+              </NavLink>
             </li>
           );
         })}
