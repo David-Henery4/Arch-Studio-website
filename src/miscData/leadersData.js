@@ -1,4 +1,4 @@
-import {avatarJackson, avatarJake, avatarMaria, avatarThompson} from "../assets/about"
+// import {avatarJackson, avatarJake, avatarMaria, avatarThompson} from "../assets/about"
 
 
 
