@@ -145,7 +145,7 @@ const ContactForm = () => {
             }
           ></textarea>
           <button
-            className="w-20 h-20 ml-auto bg-veryDarkBlue grid place-items-center hover:bg-darkGrey"
+            className="w-20 h-20 ml-auto bg-veryDarkBlue grid place-items-center hover:bg-darkGrey active:bg-veryDarkBlue"
             onClick={() => hanldeInitialSubmit()}
           >
             <ArrowIcon className="stroke-white" />

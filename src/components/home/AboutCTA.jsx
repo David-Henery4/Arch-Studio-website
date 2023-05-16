@@ -10,7 +10,7 @@ const AboutCTA = () => {
       </h3>
       <Link
         to="about"
-        className="relative px-8 py-6 bg-veryDarkBlue text-white font-bold text-bodyText inline-flex justify-center items-center gap-6 hover:bg-darkGrey"
+        className="relative px-8 py-6 bg-veryDarkBlue text-white font-bold text-bodyText inline-flex justify-center items-center gap-6 hover:bg-darkGrey active:bg-veryDarkBlue"
       >
         About Us
         <span>

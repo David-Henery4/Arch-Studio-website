@@ -9,7 +9,9 @@ const ProjectsGallery = ({projects, isPortfolio = false}) => {
         return (
           <div
             key={item?.id}
-            className="relative w-full h-60 flex flex-col justify-end items-start overflow-hidden lap:h-[560px]"
+            className={`relative w-full h-60 flex flex-col justify-end items-start overflow-hidden lap:h-[560px] ${
+              isPortfolio && "hover:cursor-pointer"
+            }`}
           >
             <div className="absolute w-full h-full top-0 left-0 bg-gradient-to-b from-black/10 to-black/60 z-10"></div>
             <p
@@ -38,7 +40,10 @@ const ProjectsGallery = ({projects, isPortfolio = false}) => {
                   {item?.label}
                 </p>
               ) : (
-                <Link to="portfolio" className="text-bodyText leading-bodyText font-medium text-white/75">
+                <Link
+                  to="portfolio"
+                  className="text-bodyText leading-bodyText font-medium text-white/75"
+                >
                   {item?.label}
                 </Link>
               )}

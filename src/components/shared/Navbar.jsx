@@ -1,6 +1,6 @@
 import { Logo, BurgerIcon } from "../../assets/icons";
 import navigationData from "../../miscData/navigationData";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = ({ sidebarInfo }) => {
   const { setIsSidebarActive, isSidebarActive } = sidebarInfo;
@@ -19,7 +19,7 @@ const Navbar = ({ sidebarInfo }) => {
         {navigationData.map((nav) => {
           return (
             <li key={nav?.id} className="hover:text-veryDarkBlue">
-              <Link to={nav?.link}>{nav?.name}</Link>
+              <NavLink className={({isActive}) => isActive ? "text-veryDarkBlue relative after:absolute after:-bottom-4 after:left-1/2 after:-translate-x-1/2 after:w-6 after:h-[2px] after:bg-veryDarkBlue" : ""} to={nav?.link}>{nav?.name}</NavLink>
             </li>
           );
         })}

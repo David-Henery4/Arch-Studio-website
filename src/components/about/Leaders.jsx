@@ -1,5 +1,5 @@
 import leadersData from "../../miscData/leadersData";
-import { avatarMaria } from "../../assets/about";
+import { LinkedInIcon, TwitterIcon } from "../../assets/icons";
 
 const Leaders = () => {
   return (
@@ -14,11 +14,18 @@ const Leaders = () => {
               key={leader?.id}
               className="w-full grid gap-4 grid-rows-leadersCard"
             >
-              <img
-                className="w-full object-cover"
-                src={leader?.img}
-                alt="avatar of {name}, who is one of the leaders of the comapny"
-              />
+              <div className="relative group">
+                <div className="hidden absolute top-0 left-0 w-full h-full bg-black/50 group-hover:block"></div>
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden justify-center items-center gap-8 group-hover:flex">
+                  <TwitterIcon className="fill-white hover:cursor-pointer" />
+                  <LinkedInIcon className="fill-white hover:cursor-pointer" />
+                </div>
+                <img
+                  className="w-full object-cover"
+                  src={leader?.img}
+                  alt={`avatar of ${leader?.name}, who is one of the leaders of the comapny`}
+                />
+              </div>
               <div>
                 <h4 className="text-smHeading leading-smHeading font-bold">
                   {leader?.name}
