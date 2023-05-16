@@ -15,7 +15,7 @@ const SubPageHero = ({heading,title,text,imgs}) => {
       </picture>
       <div className="bg-white w-full relative py-5 px-8 grid gap-5 justify-start mdTab:px-[60px] mdTab:pr-0 mdTab:pb-0 mdTab:justify-end mdTab:content-end mdTab:col-start-2 mdTab:col-end-4 mdTab:row-start-6 mdTab:row-end-[13] mdTab:gap-9 smLap:row-start-2 smLap:row-end-3">
         <div className="absolute h-11 w-11/12 bg-white -top-11 left-0 mdTab:hidden"></div>
-        <h3 className="hidden absolute -top-24 right-0 text-veryLightGrey text-9xl font-bold leading-xtraLrgHeading -tracking-[3px] mdTab:block smLap:-left-5 smLap:text-[175px] desk:text-[210px] XtraLgDesk:text-[250px]">
+        <h3 className="hidden absolute -top-20 right-0 text-veryLightGrey text-9xl font-bold leading-xtraLrgHeading -tracking-[3px] mdTab:block smLap:text-[175px] desk:text-[210px] XtraLgDesk:text-[250px]">
           {title}
         </h3>
         <h2 className="text-lrgHeadingMob leading-lrgHeadingMob -tracking-[1.2px] font-bold max-w-md smTab:text-medHeading smTab:leading-medHeading smTab:tracking-lrgMedHeading">

@@ -4,6 +4,7 @@ import PortfolioCTA from "./reused/PortfolioCTA";
 import AllProjectsBtn from "./reused/AllProjectsBtn";
 import ProjectsGallery from "./reused/ProjectsGallery";
 import SubPageHero from "./reused/SubPageHero";
+import PageLabel from "./reused/PageLabel";
 
 // SHARED
 import Navbar from "./shared/Navbar";
@@ -36,6 +37,7 @@ export{
   AllProjectsBtn,
   ProjectsGallery,
   SubPageHero,
+  PageLabel,
   // SHARED
   Navbar,
   Footer,
