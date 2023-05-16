@@ -1,7 +1,7 @@
 
 const SubPageHero = ({heading,title,text,imgs}) => {
   return (
-    <section className="col-start-1 col-end-13 mdTab:col-start-2 mdTab:col-end-12 mdTab:grid mdTab:max-h-[740px] mdTab:grid-rows-subTab mdTab:grid-cols-subTab smLap:grid-cols-subDesk smLap:grid-rows-subDesk smLap:min-h-[600px]">
+    <section className="col-start-1 col-end-13 mdTab:col-start-2 mdTab:col-end-12 mdTab:grid mdTab:min-h-[720px] mdTab:max-h-[740px] mdTab:grid-rows-subTab mdTab:grid-cols-subTab smLap:grid-cols-subDesk smLap:grid-rows-subDesk smLap:min-h-[650px]">
       <picture className="relative mdTab:col-start-1 mdTab:col-end-3 mdTab:row-start-1 mdTab:row-end-[13] smLap:row-start-1 smLap:row-end-3 smLap:col-start-1 smLap:col-end-3">
         <source media="(min-width: 56.25em)" srcSet={imgs?.desk} />
         <source media="(min-width: 39.06em)" srcSet={imgs?.tab} />
