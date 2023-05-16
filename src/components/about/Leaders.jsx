@@ -1,6 +1,10 @@
 import leadersData from "../../miscData/leadersData";
 import { LinkedInIcon, TwitterIcon } from "../../assets/icons";
 
+const getImgURL = (name) => {
+  return new URL(`../../assets/about/desktop/${name}`, import.meta.url).href;
+};
+
 const Leaders = () => {
   return (
     <section className="col-start-2 col-end-12 pb-28 flex flex-col justify-start items-start gap-14 smTab:gap-12 smLap:flex-row lap:gap-[140px]">
@@ -22,7 +26,7 @@ const Leaders = () => {
                 </div>
                 <img
                   className="w-full object-cover"
-                  src={leader?.img}
+                  src={getImgURL(leader?.img)}
                   alt={`avatar of ${leader?.name}, who is one of the leaders of the comapny`}
                 />
               </div>
